@@ -1,0 +1,8 @@
+<h1>Search Members</h1>
+
+<%= form_tag '/search', method: :get do %>
+  <%= label_tag :house %>
+  <%= select_tag :house, options_for_select(["Stark", "Greyjoy"]) %>
+
+  <%= submit_tag 'Get Members' %>
+<% end %>
