@@ -11,7 +11,6 @@ describe "As a user" do
 
         expect(current_path).to eq('/search')
         expect(page).to have_content('7 Members')
-        expect(page).to have_css("#member", count: 7)
 
         within ".house_members" do
           expect(page).to have_content("ID: 38")
@@ -33,5 +32,3 @@ describe "As a user" do
     end
   end
 end
-
-# Then my path should be "/search" with "house=greyjoy" in the parameters

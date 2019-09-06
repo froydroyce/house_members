@@ -16,7 +16,7 @@ class SearchFacade
   private
 
   def house_members(house)
-    service.members_by_house(house)
+    service.members_by_house(house)[:data].first[:attributes][:members]
   end
 
   def service

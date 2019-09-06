@@ -1,1 +1,11 @@
 <h3><%= facade.member_count %></h3>
+
+
+<section class="house_members">
+  <% facade.members.each do |member| %>
+    <p>Name: <%= member.name %></p>
+    <ul>
+      <li>ID: <%= member.id %></li>
+    </ul>
+  <% end %>
+</section>

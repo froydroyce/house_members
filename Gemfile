@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
+gem 'faraday'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -43,6 +44,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'simplecov'
+  gem 'launchy'
 end
 
 group :development do

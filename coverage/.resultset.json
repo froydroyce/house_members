@@ -256,30 +256,52 @@
         null,
         null,
         1,
-        1,
-        0,
+        2,
+        14,
         null,
         null,
         null,
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null
       ],
       "/Users/sejinkim/turing/challenges/house_memebers/app/services/westeros_service.rb": [
         1,
         1,
+        2,
+        null,
+        null,
         1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/sejinkim/turing/challenges/house_memebers/app/models/member.rb": [
+        1,
+        1,
+        1,
+        14,
+        14,
         null,
         null
       ]
     },
-    "timestamp": 1567787454
+    "timestamp": 1567788826
   }
 }
