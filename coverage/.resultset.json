@@ -225,83 +225,27 @@
         1,
         null
       ],
-      "/Users/sejinkim/turing/challenges/house_memebers/app/controllers/welcome_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/sejinkim/turing/challenges/house_memebers/app/controllers/application_controller.rb": [
-        1,
-        null
-      ],
-      "/Users/sejinkim/turing/challenges/house_memebers/app/controllers/search_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/sejinkim/turing/challenges/house_memebers/app/facades/search_facade.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        2,
-        14,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
       "/Users/sejinkim/turing/challenges/house_memebers/app/services/westeros_service.rb": [
         1,
         1,
-        2,
+        0,
         null,
         null,
         1,
         null,
         1,
-        2,
-        2,
+        0,
+        0,
         null,
         null,
         null,
         1,
-        2,
-        2,
-        null,
-        null
-      ],
-      "/Users/sejinkim/turing/challenges/house_memebers/app/models/member.rb": [
-        1,
-        1,
-        1,
-        14,
-        14,
+        0,
+        0,
         null,
         null
       ]
     },
-    "timestamp": 1567788826
+    "timestamp": 1567789454
   }
 }
