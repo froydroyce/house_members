@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Stark"
+    },
+    {
+        "id": 2,
+        "name": "Lannister"
+    },
+    {
+        "id": 3,
+        "name": "Targaryen"
+    },
+    {
+        "id": 4,
+        "name": "Tyrell"
+    },
+    {
+        "id": 5,
+        "name": "Greyjoy"
+    }
+]

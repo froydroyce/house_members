@@ -4,14 +4,17 @@ class WesterosService
   end
 
   def all_houses
-    get_json("/api/v1/house?X-API-Key=#{ENV['WESTEROS_API']}")
+    get_json("/api/v1/house")
   end
 
   private
 
   def conn
-    Faraday.new(url: "https://westeros-as-a-service.herokuapp.com") do |f|
-      f.adapter Faraday.default_adapter
+    Faraday.new(
+      url: "https://westeros-as-a-service.herokuapp.com",
+      headers: {'x_api_key' => ENV['WESTEROS_API']}
+      ) do |f|
+        f.adapter Faraday.default_adapter
     end
   end
 

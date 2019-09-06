@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-06T11:31:38-06:00">2019-09-06T11:31:38-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-06T11:52:22-06:00">2019-09-06T11:52:22-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">85.9%</span></span>
+    (<span class="covered_percent"><span class="yellow">90.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.87
+         0.91
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>19</b> files in total.
-    <b>78</b> relevant lines. 
-    <span class="green"><b>67</b> lines covered</span> and
-    <span class="red"><b>11</b> lines missed </span>
+    <b>80</b> relevant lines. 
+    <span class="green"><b>72</b> lines covered</span> and
+    <span class="red"><b>8</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#a7915a17a873e2f3ba9c83073270b1f663a906eb" class="src_link" title="app/services/westeros_service.rb">app/services/westeros_service.rb</a></td>
-        <td class="red strong">50.0 %</td>
-        <td>18</td>
+        <td class="yellow strong">83.33 %</td>
+        <td>25</td>
+        <td>12</td>
         <td>10</td>
-        <td>5</td>
-        <td>5</td>
-        <td>0.5</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -623,11 +623,11 @@
         <div class="source_table" id="a7915a17a873e2f3ba9c83073270b1f663a906eb">
   <div class="header">
     <h3>app/services/westeros_service.rb</h3>
-    <h4><span class="red">50.0 %</span> covered</h4>
+    <h4><span class="yellow">83.33 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -667,76 +667,118 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def all_houses</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get_json(&quot;/api/v1/house&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  def conn</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
-          
-          <code class="ruby">    Faraday.new(url: &quot;http://westerosapi.herokuapp.com&quot;) do |f|</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
-          
-          <code class="ruby">      f.adapter Faraday.default_adapter</code>
+          <code class="ruby">  private</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">  def conn</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    Faraday.new(</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">      url: &quot;https://westeros-as-a-service.herokuapp.com&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">      headers: {&#39;x_api_key&#39; =&gt; ENV[&#39;WESTEROS_API&#39;]}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">  def get_json(url)</code>
+          <code class="ruby">      ) do |f|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    response = conn.get(url)</code>
+          <code class="ruby">        f.adapter Faraday.default_adapter</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def get_json(url)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    response = conn.get(url)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">end</code>
