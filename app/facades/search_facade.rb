@@ -1,5 +1,5 @@
 class SearchFacade
-  def initialize(house)
+  def initialize(house = nil)
     @house = house
   end
 
@@ -13,7 +13,19 @@ class SearchFacade
     end
   end
 
+  def houses
+    houses = []
+    westeros_houses.map do |house|
+      houses << [house[:name], house[:id]]
+    end
+    houses
+  end
+
   private
+
+  def westeros_houses
+    service.all_houses
+  end
 
   def house_members(house)
     service.members_by_house(house)[:data].first[:attributes][:members]

@@ -2,13 +2,7 @@
 
 <%= form_tag '/search', method: :get do %>
   <%= label_tag :house %>
-  <%= select_tag :house, options_for_select([
-    ['Stark', 'stark'],
-    ['Lannister', 'lannister'],
-    ['Targaryen', 'targaryen'],
-    ['Tyrell', 'tyrell'],
-    ['Greyjoy', 'greyjoy']
-  ]) %>
+  <%= select_tag :house, options_for_select(facade.houses) %>
 
   <%= submit_tag 'Get Members' %>
 <% end %>
