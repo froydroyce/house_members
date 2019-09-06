@@ -247,10 +247,39 @@
       ],
       "/Users/sejinkim/turing/challenges/house_memebers/app/facades/search_facade.rb": [
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/sejinkim/turing/challenges/house_memebers/app/services/westeros_service.rb": [
+        1,
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1567786668
+    "timestamp": 1567787454
   }
 }
